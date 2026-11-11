@@ -1,28 +1,4 @@
 body
 {
-    background-color:black;
-    color:white;
-    font-family: serif;
-    letter-spacing: 0.02em;
-    font-size: 10pt;
-    padding: 0px;
-    margin: 2px;
-    margin-right: 35%;
-    margin-left: 2%;
-    margin-top: 2%;
-}
-
-a:link {
-    color: #f8dbff;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #f8dbff;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #e3b3ff;
-    text-decoration: underline;
+    font-size: 50px; 
 }

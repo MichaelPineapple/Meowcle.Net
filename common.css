@@ -26,17 +26,3 @@ a:hover {
     color: #e3b3ff;
     text-decoration: underline;
 }
-
-h2 {
-    color:#eda6ff;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-div {
-    background-color: #121212;
-    box-sizing: border-box;
-    padding: 20px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
