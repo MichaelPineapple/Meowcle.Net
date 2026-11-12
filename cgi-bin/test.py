@@ -3,18 +3,9 @@
 import json
 import os
 import sys
-
-#def send(status, obj):
-#    sys.stdout.write("Status: %s\r\n" % status)
-#    sys.stdout.write("Content-Type: application/json; charset=utf-8\r\n\r\n")
-#    sys.stdout.write(json.dumps(obj))
-#    
     
 def main(request):
-    
     return {"resultCode": "ok", "payload": str(request)}
-    #send("200 OK", {"resultCode": "ok", "payload": "Hello"})
-
 
 length = int(os.environ.get("CONTENT_LENGTH") or 0)
 request = sys.stdin.buffer.read(length)
