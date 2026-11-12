@@ -4,3 +4,6 @@
 [submodule "Spheem"]
 	path = Spheem
 	url = https://github.com/MichaelPineapple/Spheem
+[submodule "cgi-bin/Spheem-API"]
+	path = cgi-bin/Spheem-API
+	url = https://github.com/MichaelPineapple/Spheem-API
