@@ -23,13 +23,12 @@ function mclHttPost(_url, _request, _callback)
 
 function test()
 {
-    alert("Test")
     function callback_test(_resultCode, _payload)
     {
         alert(_payload)
     }
 
     const URL = 'https://meowcle.net/cgi-bin/test.py';
-    requestObj = { };
+    requestObj = { test:"bruh" };
     mclHttPost(URL,requestObj, callback_test);
 }
