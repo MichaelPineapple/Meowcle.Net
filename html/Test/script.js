@@ -28,7 +28,7 @@ function test()
         alert(_payload)
     }
 
-    const URL = 'https://meowcle.net/cgi-bin/test.py';
+    const URL = 'https://meowcle.net/cgi-bin/Spheem-API/hello.js';
     requestObj = { test:"bruh" };
     mclHttPost(URL,requestObj, callback_test);
 }
