@@ -35,6 +35,18 @@ function hello()
     callSpheem("hello", request, callback_hello)
 }
 
+function createAccount()
+{
+    const username = document.getElementById("username").value
+    const password = document.getElementById("password").value
+    function callback_createAccount(_resultCode, _payload)
+    {
+        alert(_payload)
+    }
+    const request = { username:username, password:password }
+    callSpheem("createaccount", request, callback_createAccount)
+}
+
 function login()
 {
     const username = document.getElementById("username").value
@@ -45,4 +57,16 @@ function login()
     }
     const request = { username:username, password:password }
     callSpheem("login", request, callback_login)
+}
+
+function pay()
+{
+    const recipient = document.getElementById("recipient").value
+    const amount = document.getElementById("amount").value
+    function callback_pay(_resultCode, _payload)
+    {
+        alert(_payload)
+    }
+    const request = { recipient:recipient, amount:amount }
+    callSpheem("pay", request, callback_login)
 }
