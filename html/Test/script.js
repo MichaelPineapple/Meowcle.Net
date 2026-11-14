@@ -68,5 +68,5 @@ function pay()
         alert(_payload)
     }
     const request = { recipient:recipient, amount:amount }
-    callSpheem("pay", request, callback_login)
+    callSpheem("pay", request, callback_pay)
 }
