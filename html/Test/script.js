@@ -1,7 +1,6 @@
-function mclHttPost(_url, _request, _callback)
+function httpPost(_url, _request, _callback)
 {
     console.log(_request);
-
     fetch(_url, {
       method: 'POST',
       headers: {
@@ -11,24 +10,39 @@ function mclHttPost(_url, _request, _callback)
     })
     .then(response => response.json())
     .then(data => {
-      console.log('Success:', data);
-      _callback(data.resultCode, data.payload);
+      console.log('Success:', data)
+      _callback(data.resultCode, data.payload)
     })
     .catch((error) => {
-      console.error('Error:', error);
-      _callback("LOCAL_ERR", null);
+      console.error('Error:', error)
+      _callback("LOCAL_ERR", null)
     });
 }
 
-
-function test()
+function callSpheem(verb, request, callback)
 {
-    function callback_test(_resultCode, _payload)
+    const URL = "https://meowcle.net/cgi-bin/Spheem-API/" + verb + ".js"
+    httpPost(URL, request, callback)
+}
+
+function hello()
+{
+    function callback_hello(_resultCode, _payload)
     {
         alert(_payload)
     }
+    const request = { test:"bruh" }
+    callSpheem("hello", request, callback_hello)
+}
 
-    const URL = 'https://meowcle.net/cgi-bin/Spheem-API/hello.js';
-    requestObj = { test:"bruh" };
-    mclHttPost(URL,requestObj, callback_test);
+function login()
+{
+    const username = document.getElementById("username").value
+    const password = document.getElementById("password").value
+    function callback_login(_resultCode, _payload)
+    {
+        alert(_payload)
+    }
+    const request = { username:username, password:password }
+    callSpheem("login", request, callback_login)
 }
