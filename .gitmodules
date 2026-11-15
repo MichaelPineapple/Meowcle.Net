@@ -1,6 +1,3 @@
-[submodule "cgi-bin/Spheem-API"]
-	path = cgi-bin/Spheem-API
-	url = https://github.com/MichaelPineapple/Spheem-API
 [submodule "html/Spheem"]
 	path = html/Spheem
 	url = https://github.com/MichaelPineapple/Spheem
