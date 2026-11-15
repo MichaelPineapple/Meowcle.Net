@@ -1,6 +1,9 @@
-[submodule "html/Spheem"]
-	path = html/Spheem
-	url = https://github.com/MichaelPineapple/Spheem
 [submodule "html/WizlonTime"]
 	path = html/WizlonTime
 	url = https://github.com/MichaelPineapple/WizlonTime
+[submodule "cgi-bin/SpheemAPI"]
+	path = cgi-bin/Spheem
+	url = https://github.com/Spheem/SpheemAPI
+[submodule "html/SpheemWallet"]
+	path = html/Spheem
+	url = http://github.com/Spheem/SpheemWallet
